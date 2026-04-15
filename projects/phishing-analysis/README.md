@@ -33,6 +33,10 @@ The emails appeared to come from a trusted service or person but contained sever
 ### 5. Social Engineering Tactics
 - The emails use fear, urgency, curiosity, and unrealistic offers to manipulate the user into clicking links or making contact.
 
+### 6. URL Inspection
+- The domain does not match the official service
+- Look-alike domains are commonly used to deceive users
+
 
 ## 🚨 Indicators of Compromise (IOCs)
 
@@ -44,7 +48,7 @@ The emails appeared to come from a trusted service or person but contained sever
 
 ## 🌍 Real-World Relevance
 
-Phishing remains one of the most common initial access methods used in cyber attacks.
+Phishing remains one of the most common initial access methods used in cyber attacks. This demonstrates how phishing attacks combine technical deception with social engineering to exploit users.
 
 ## 🔐 Recommendations
 
