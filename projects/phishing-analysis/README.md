@@ -21,11 +21,11 @@ The emails appeared to come from a trusted service or person but contained sever
 - The sender email does not match the official domain of the service (email 2)
 
 ### 2. Urgent Language
-- Email 1 uses urgency and financial pressure to push the user into acting quickly without verifying the message.
+- Email 1 uses urgency and financial pressure to push the user into acting quickly without verifying the message. - The attacker attempts to trick the user into calling a fraudulent phone number to obtain sensitive information.
 
 ### 3. Suspicious Link
-- Email 3 contains a look-alike URL designed to appear legitimate.
-- The link may redirect the user to a fake website intended to steal credentials or personal information.
+- Email 3 contains a look-alike domain designed to mimic a legitimate website.
+- This technique is commonly used to trick users into entering credentials on a fake login page.
 
 ### 4. Generic Greeting
 - Email 3 Uses “Hello” instead of the user’s name
@@ -44,7 +44,7 @@ The emails appeared to come from a trusted service or person but contained sever
 
 ## 🌍 Real-World Relevance
 
-Phishing attacks are one of the most common methods used by attackers to steal credentials and gain unauthorized access to systems.
+Phishing remains one of the most common initial access methods used in cyber attacks.
 
 ## 🔐 Recommendations
 
