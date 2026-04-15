@@ -4,6 +4,16 @@ Suspicious emails were analyzed. Email 1 claimed the user owed money to Paypal. 
 
 The emails appeared to come from a trusted service or person but contained several red flags indicating phishing attempts.
 
+## Screenshots
+
+### Email 1
+![Phishing Email 1](./phishing%20email%201.png)
+
+### Email 2
+![Phishing Email 2](./phishing%20email%202.png)
+
+### Email 3
+![Phishing Email 3](./phishing%20email%203.png)
 
 ## 🔍 Analysis
 
@@ -11,17 +21,18 @@ The emails appeared to come from a trusted service or person but contained sever
 - The sender email does not match the official domain of the service (email 2)
 
 ### 2. Urgent Language
-- The email uses sense of urgency to hide their use of the note 'from seller' and other invoice fields. (email 1)
+- Email 1 uses urgency and financial pressure to push the user into acting quickly without verifying the message.
 
 ### 3. Suspicious Link
-- The look-alike URL (email 3)
-- Likely redirects to a fake website to input user details 
+- Email 3 contains a look-alike URL designed to appear legitimate.
+- The link may redirect the user to a fake website intended to steal credentials or personal information.
 
 ### 4. Generic Greeting
 - Email 3 Uses “Hello” instead of the user’s name
 
 ### 5. Social Engineering Tactics
-- Creates fear and urgency to manipulate the user into clicking the link. Phisher is hoping i will call the number so they can continue the scam. The offer in the Coca Cola email is too good to be true.
+- The emails use fear, urgency, curiosity, and unrealistic offers to manipulate the user into clicking links or making contact.
+
 
 ## 🚨 Indicators of Compromise (IOCs)
 
