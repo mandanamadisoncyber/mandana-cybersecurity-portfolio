@@ -1,10 +1,9 @@
 ## 📧 Phishing Email Samples
 
-Suspicious emails were analyzed. Email 1 claimed the user owed money to Paypal. Email 2 appear
+Suspicious emails were analyzed. Email 1 claimed the user owed money to Paypal. Email 2 appeared to be an unbelievable offer from Coca Cola and email 3 was a shared document email with hyperlinks.
 
 The emails appeared to come from a trusted service or person but contained several red flags indicating phishing attempts.
 
-## screenshots
 
 ## 🔍 Analysis
 
@@ -15,7 +14,7 @@ The emails appeared to come from a trusted service or person but contained sever
 - The email uses sense of urgency to hide their use of the note 'from seller' and other invoice fields. (email 1)
 
 ### 3. Suspicious Link
-- The look-alike URL
+- The look-alike URL (email 3)
 - Likely redirects to a fake website to input user details 
 
 ### 4. Generic Greeting
