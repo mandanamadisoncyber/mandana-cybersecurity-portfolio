@@ -18,16 +18,22 @@ Used queries to filter and analyze events
 Log Analysis
 Searched logs for suspicious activity
 Filtered events using Splunk queries
-Example query:
-index=* "failed password"
+query:
+index="linux-alert" sourcetype="linux_secure" 10.10.242.248
 
 🔍 Detection
 Identified multiple failed login attempts
 Observed repeated activity from the same source
 Detected patterns indicating potential brute-force behavior
+query:
+src_ip=10.10.242.248 action=failure
+| table _time, user
 
 📸 Screenshots
 
+splunk_search.png
+
+splunk_failed attempts_userip.png
 
 
 Search Results
