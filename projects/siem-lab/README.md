@@ -33,7 +33,7 @@ src_ip=10.10.242.248 action=failure
 
 ![index search](./splunk-search.png)
 
-![failed login attempts](./splunk_failed attempts_userip.png)
+![failed login attempts](./splunk_failed_attempts.png)
 
 
 
