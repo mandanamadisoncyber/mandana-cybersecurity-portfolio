@@ -31,9 +31,9 @@ src_ip=10.10.242.248 action=failure
 
 📸 Screenshots
 
-![index search](./splunk_search.png)
+![index search](./splunk-search.png)
 
-![failed login attempts](./splunk_failed%attempts_userip.png)
+![failed login attempts](./splunk_failed attempts_userip.png)
 
 
 
