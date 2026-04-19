@@ -32,7 +32,7 @@ This pattern is consistent with a potential brute-force attack
 
 📸 Screenshots
 Base Search 
-![index search](./splunk_search.png)
+![index search](./splunk-search.png)
 
 Failed Login Attempts by User
 ![failed login attempts](./splunk_failed_attempts.png)
