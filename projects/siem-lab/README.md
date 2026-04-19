@@ -25,9 +25,7 @@ index="linux-alert" sourcetype="linux_secure" 10.10.242.248
 Identified multiple failed login attempts
 Observed repeated activity from the same source
 Detected patterns indicating potential brute-force behavior
-query:
-src_ip=10.10.242.248 action=failure
-| table _time, user
+Detected 500 login attempts from user John Smith.
 
 📸 Screenshots
 
