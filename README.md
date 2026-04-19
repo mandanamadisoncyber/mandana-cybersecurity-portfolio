@@ -20,15 +20,28 @@ Aspiring Cybersecurity Analyst focused on threat detection, incident response, a
 
 ## 🚀 Projects
 
-### 🔍 Nmap Scan Lab – TryHackMe
+### 🔍 Nmap Vulnerability Scan Lab
 
-Performed network scanning using Nmap to identify open ports and services in a controlled lab environment.
-
-* Identified exposed services (FTP, SSH, HTTP)
-* Learned reconnaissance techniques used in real-world attacks
-* Documented findings and security risks
+Performed network scanning using Nmap to identify open ports, services, and potential risks.
 
 👉 [View Project](./projects/vulnerability-scan)
+
+---
+
+### 🎣 Phishing Email Analysis
+
+Analyzed multiple phishing emails to identify social engineering techniques and indicators of compromise (IOCs).
+
+👉 [View Project](./projects/phishing-analysis)
+
+---
+
+### 🛡️ SIEM Lab – Splunk
+
+Used Splunk to analyze logs and detect suspicious activity, including brute-force login attempts.
+
+👉 [View Project](./projects/siem-lab)
+
 
 ---
 
