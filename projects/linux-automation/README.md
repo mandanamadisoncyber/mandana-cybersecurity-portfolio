@@ -34,6 +34,7 @@ The full deployment and security automation script is included here:
 - Configured host-based firewall rules
 - Disabled SSH root login to reduce unauthorized administrative access
 - Reviewed failed login attempts for basic authentication monitoring
+- Restricted network access by allowing only required ports (SSH and application port)
 
 ---
 
@@ -53,7 +54,8 @@ The full deployment and security automation script is included here:
 - Confirmed the setup process could be automated through a Bash script
 
 ## 🧠 Analysis
-Automation reduces manual errors and ensures consistent system setup. Adding security configurations improves system protection against unauthorized access.
+- Configured AWS Security Group rules to allow external access to the application
+- Automation reduces manual errors and ensures consistent system setup. Adding security configurations improves system protection against unauthorized access.
 
 ---
 
