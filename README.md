@@ -42,6 +42,15 @@ Used Splunk to analyze logs and detect suspicious activity, including brute-forc
 
 👉 [View Project](./projects/siem-lab)
 
+---
+
+### 🐧 Linux Automation & Secure Deployment (AWS EC2)
+
+Automated deployment of a Node.js application on AWS EC2, including firewall configuration and SSH hardening.
+
+👉 [View Project](./projects/linux-automation)
+
+
 
 ---
 
