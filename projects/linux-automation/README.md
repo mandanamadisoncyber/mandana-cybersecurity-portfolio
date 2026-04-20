@@ -1,4 +1,4 @@
-# 🐧 Linux Automation & Security Deployment Script (AWS EC2)
+# 🐧 Linux Automation & Secure Deployment (AWS EC2)
 
 ## 🎯 Objective
 The goal of this project was to automate application deployment and basic security configuration on an AWS EC2 instance.
@@ -54,7 +54,8 @@ The full deployment and security automation script is included here:
 - Confirmed the setup process could be automated through a Bash script
 
 ## 🧠 Analysis
-- Configured AWS Security Group rules to allow external access to the application
+- Configured application to listen on 0.0.0.0 to allow external access from AWS EC2
+- Configured AWS Security Group rules to allow inbound traffic on port 3000
 - Automation reduces manual errors and ensures consistent system setup. Adding security configurations improves system protection against unauthorized access.
 
 ---
