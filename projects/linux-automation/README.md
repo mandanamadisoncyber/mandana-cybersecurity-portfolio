@@ -31,7 +31,11 @@ The goal of this project was to automate application deployment and basic securi
 ---
 
 ## 📸 Screenshots
+![Deploy script](./deploy_script.png)
 
+![App Running in cl](./app_running_aws_cl.png)
+
+![App Running](./app_running.png)
 
 ---
 
