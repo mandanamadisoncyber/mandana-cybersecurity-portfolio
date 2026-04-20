@@ -1,4 +1,4 @@
-# 🐧 Linux Automation & Security Script (AWS)
+# 🐧 Linux Automation & Security Deployment Script (AWS EC2)
 
 ## 🎯 Objective
 The goal of this project was to automate application deployment and basic security configuration on an AWS EC2 instance.
@@ -23,10 +23,17 @@ The goal of this project was to automate application deployment and basic securi
 
 ---
 
+## 📄 Script File
+The full deployment and security automation script is included here:
+
+[View setup.sh](./setup.sh)
+
+---
+
 ## 🔐 Security Features
-- Firewall configured to allow only necessary access
-- SSH root login disabled
-- Basic monitoring of failed login attempts
+- Configured host-based firewall rules
+- Disabled SSH root login to reduce unauthorized administrative access
+- Reviewed failed login attempts for basic authentication monitoring
 
 ---
 
@@ -38,6 +45,12 @@ The goal of this project was to automate application deployment and basic securi
 ![App Running](./app_running.png)
 
 ---
+
+## ✅ Outcome
+
+- Successfully deployed a Node.js application on an AWS EC2 instance
+- Verified the application was accessible through the browser
+- Confirmed the setup process could be automated through a Bash script
 
 ## 🧠 Analysis
 Automation reduces manual errors and ensures consistent system setup. Adding security configurations improves system protection against unauthorized access.
