@@ -1,6 +1,6 @@
 # 👩‍💻 Mandana Madison – Cybersecurity Portfolio
 
-Aspiring Cybersecurity Analyst focused on threat detection, incident response, and vulnerability analysis.
+Aspiring Cybersecurity Analyst with hands-on experience in network scanning, threat detection, phishing analysis, and cloud-based system deployment.
 
 🔐 Hands-on experience with TryHackMe labs
 💻 Building real-world cybersecurity projects
@@ -15,10 +15,17 @@ Aspiring Cybersecurity Analyst focused on threat detection, incident response, a
 * Threat Detection Basics
 * Vulnerability Analysis
 * TryHackMe Labs
+* AWS (EC2)
+* Splunk
+* Bash scripting
+* log analysis
+  
 
 ---
 
 ## 🚀 Projects
+
+Below are selected hands-on projects demonstrating practical cybersecurity skills.
 
 ### 🔍 Nmap Vulnerability Scan Lab
 
