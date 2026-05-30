@@ -1,6 +1,6 @@
 # 👩‍💻 Mandana Madison – Cybersecurity Portfolio
 
-Aspiring Cybersecurity Analyst with hands-on experience in network scanning, threat detection, phishing analysis, and cloud-based system deployment.
+Cybersecurity Analyst with hands-on experience in network scanning, threat detection, phishing analysis, and cloud-based system deployment.
 
 🔐 Hands-on experience with TryHackMe labs
 💻 Building real-world cybersecurity projects
