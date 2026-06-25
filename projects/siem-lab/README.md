@@ -1,12 +1,12 @@
-# 🛡️ SIEM Lab – Splunk (Log Analysis & Threat Detection)
+# SIEM Lab – Splunk (Log Analysis & Threat Detection)
 
-## 🎯 Objective
+## Objective
 
 The goal of this project was to use Splunk to analyze log data and detect suspicious activity within a simulated environment.
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 * Splunk
 * TryHackMe Lab Environment
@@ -14,7 +14,7 @@ The goal of this project was to use Splunk to analyze log data and detect suspic
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 * Accessed Splunk environment through TryHackMe
 * Explored log data and search functionality
@@ -22,7 +22,7 @@ The goal of this project was to use Splunk to analyze log data and detect suspic
 
 ---
 
-## 🧪 Investigation
+## Investigation
 
 ### Log Analysis
 
@@ -43,7 +43,7 @@ src_ip=10.10.242.248 action=failure
 
 ---
 
-## 🔍 Detection
+## Detection
 
 * Identified repeated authentication failures from source IP `10.10.242.248`
 * Used Splunk statistics to group failed login attempts by user
@@ -52,7 +52,7 @@ src_ip=10.10.242.248 action=failure
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Base Search
 
@@ -64,7 +64,7 @@ src_ip=10.10.242.248 action=failure
 
 ---
 
-## 🧠 Analysis
+## Analysis
 
 * Repeated failed login attempts indicate possible brute-force activity
 * Attackers often target user accounts with multiple password attempts
@@ -73,7 +73,7 @@ src_ip=10.10.242.248 action=failure
 
 ---
 
-## 🌍 Real-World Relevance
+## Real-World Relevance
 
 Splunk is widely used in Security Operations Centers (SOC) to monitor logs, detect threats, and investigate security incidents.
 
@@ -81,7 +81,7 @@ Brute-force attacks are a common method used by attackers to gain unauthorized a
 
 ---
 
-## 🔐 Recommendations
+## Recommendations
 
 * Implement account lockout policies after multiple failed attempts
 * Monitor login activity for unusual patterns
