@@ -1,11 +1,11 @@
-# 🐧 Linux Automation & Secure Deployment (AWS EC2)
+# Linux Automation & Secure Deployment (AWS EC2)
 
-## 🎯 Objective
+## Objective
 The goal of this project was to automate application deployment and basic security configuration on an AWS EC2 instance.
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 - AWS EC2 (Amazon Linux)
 - Bash scripting
 - Node.js
@@ -13,7 +13,7 @@ The goal of this project was to automate application deployment and basic securi
 
 ---
 
-## ⚙️ What the Script Does
+## What the Script Does
 - Updates the system
 - Installs Node.js and dependencies
 - Installs Git and clones a repository
@@ -23,14 +23,14 @@ The goal of this project was to automate application deployment and basic securi
 
 ---
 
-## 📄 Script File
+## Script File
 The full deployment and security automation script is included here:
 
 [View setup.sh](./setup.sh)
 
 ---
 
-## 🔐 Security Features
+## Security Features
 - Configured host-based firewall rules
 - Disabled SSH root login to reduce unauthorized administrative access
 - Reviewed failed login attempts for basic authentication monitoring
@@ -38,7 +38,7 @@ The full deployment and security automation script is included here:
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 ![Deploy script](./deploy_script.png)
 
 ![App running in aws](./app_running_aws_cl.png)
@@ -47,25 +47,25 @@ The full deployment and security automation script is included here:
 
 ---
 
-## ✅ Outcome
+## Outcome
 
 - Successfully deployed a Node.js application on an AWS EC2 instance
 - Verified the application was accessible through the browser
 - Confirmed the setup process could be automated through a Bash script
 
-## 🧠 Analysis
+## Analysis
 - Configured application to listen on 0.0.0.0 to allow external access from AWS EC2
 - Configured AWS Security Group rules to allow inbound traffic on port 3000
 - Automation reduces manual errors and ensures consistent system setup. Adding security configurations improves system protection against unauthorized access.
 
 ---
 
-## 🌍 Real-World Relevance
+## Real-World Relevance
 Automation scripts are commonly used in cloud environments to deploy and secure systems efficiently.
 
 ---
 
-## 🔐 Recommendations
+## Recommendations
 - Restrict open ports further where possible
 - Use key-based authentication only
 - Regularly monitor system logs
