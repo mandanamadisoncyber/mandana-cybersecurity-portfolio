@@ -1,0 +1,337 @@
+# SwiftSpend Financial – Phishing Kit Investigation
+
+## Objective
+
+The goal of this project was to investigate a phishing campaign targeting employees at **SwiftSpend Financial** in a TryHackMe phishing analysis room.
+
+The investigation focused on analyzing suspicious emails, identifying phishing URLs, reviewing a credential harvesting page, retrieving an exposed phishing kit, using threat intelligence tools, and extracting indicators of compromise to support SOC triage and response.
+
+Sensitive victim information, submitted passwords, and challenge flag values have been redacted to follow responsible reporting practices.
+
+---
+
+## Tools Used
+
+* TryHackMe Lab Environment
+* Mozilla Firefox
+* Linux Terminal
+* `sha256sum`
+* VirusTotal
+* CyberChef
+* Email Analysis
+* URL Analysis
+* Open-Source Threat Intelligence
+* Phishing Kit Analysis
+
+---
+
+## Setup
+
+* Started the TryHackMe lab machine
+* Opened the `phish-emails` folder on the desktop
+* Reviewed suspicious email samples
+* Investigated phishing URLs and redirection behavior
+* Accessed exposed directories on the phishing domain
+* Downloaded and hashed the phishing kit archive
+* Reviewed the file hash using VirusTotal
+* Extracted the phishing kit and analyzed source files
+* Reviewed exposed logs for evidence of credential harvesting
+
+---
+
+## Investigation
+
+### Email Analysis
+
+Multiple employees at SwiftSpend Financial reported receiving suspicious emails. Some users had already submitted credentials and were no longer able to access their accounts.
+
+The investigation began by reviewing the provided phishing email samples to identify recipients, sender information, attachments, and embedded links.
+
+The email related to a quote for services rendered was received by:
+
+```text
+[redacted employee]
+```
+
+The adversary used the following sender address to deliver the phishing emails:
+
+```text
+Accounts.Payable@groupmarketingonline.icu
+```
+
+This sender address was treated as an indicator of compromise.
+
+---
+
+### Phishing URL Analysis
+
+The attachment sent to one of the employees contained a redirection URL.
+
+The root domain identified from the redirection URL was:
+
+```text
+kennaroads.buzz
+```
+
+When the phishing URL was opened in the lab browser, it displayed a fake login page impersonating:
+
+```text
+Microsoft
+```
+
+The page attempted to mimic a Microsoft sign-in portal in order to collect user credentials.
+
+---
+
+### Exposed Directory Review
+
+Further investigation of the phishing domain showed that directory listing was enabled.
+
+The exposed directory reviewed was:
+
+```text
+/data
+```
+
+The directory contained an exposed phishing kit archive:
+
+```text
+Update365.zip
+```
+
+This indicated that the attacker had left phishing kit files accessible on the web server.
+
+---
+
+### Phishing Kit Hash Analysis
+
+The phishing kit archive was downloaded into the lab environment and hashed using the `sha256sum` command.
+
+```bash
+sha256sum Update365.zip
+```
+
+The SHA256 hash of the archive was:
+
+```text
+ba3c15267393419eb08c7b2652b8b6b39b406ef300ae8a18fee4d16b19ac9686
+```
+
+The hash was then investigated using VirusTotal.
+
+VirusTotal identified the archive as malicious, with detections associated with phishing and Trojan activity.
+
+The additional threat category identified was:
+
+```text
+Trojan
+```
+
+The VirusTotal details showed that the archive contained:
+
+```text
+49 files
+```
+
+---
+
+### Captured Credential Log Review
+
+The exposed phishing kit directory contained a log file showing submitted credentials.
+
+The investigation confirmed that at least one internal user submitted credentials more than once. For responsible reporting, the affected user email and submitted passwords have been redacted.
+
+```text
+Repeated credential submission: [redacted internal user]
+Submitted passwords: [redacted]
+```
+
+This finding indicated that the phishing page was actively collecting credentials and that at least one user may have been compromised.
+
+---
+
+### Phishing Kit Source Code Review
+
+The phishing kit archive was extracted and the `submit.php` file was reviewed.
+
+The source code revealed the email address used by the adversary to collect stolen credentials:
+
+```text
+m3npat@yandex.com
+```
+
+This email address was treated as an additional indicator of compromise.
+
+---
+
+### Encoded File Review
+
+The phishing URL also exposed a `flag.txt` file. The content was decoded using CyberChef.
+
+For responsible reporting and to avoid publishing TryHackMe challenge answers, the decoded value has been redacted.
+
+```text
+Decoded value: [redacted TryHackMe flag]
+```
+
+---
+
+## Detection
+
+The investigation identified a phishing campaign using a fake Microsoft login page hosted on attacker-controlled infrastructure.
+
+Key findings included:
+
+* Suspicious emails sent to SwiftSpend Financial employees
+* A sender address impersonating accounts payable activity
+* A phishing domain hosting a fake Microsoft login page
+* Directory listing enabled on the phishing web server
+* An exposed phishing kit archive
+* Captured credential logs left accessible on the server
+* A phishing kit configured to exfiltrate credentials to an external email address
+* VirusTotal detections classifying the archive as phishing and Trojan-related
+
+---
+
+## Indicators of Compromise
+
+| Type                           | Indicator                                                          |
+| ------------------------------ | ------------------------------------------------------------------ |
+| Sender Email                   | `Accounts.Payable@groupmarketingonline.icu`                        |
+| Phishing Domain                | `kennaroads.buzz`                                                  |
+| Exposed Directory              | `/data`                                                            |
+| Phishing Kit Archive           | `Update365.zip`                                                    |
+| SHA256                         | `ba3c15267393419eb08c7b2652b8b6b39b406ef300ae8a18fee4d16b19ac9686` |
+| Impersonated Brand             | `Microsoft`                                                        |
+| Credential Collection Email    | `m3npat@yandex.com`                                                |
+| Repeated Credential Submission | `[redacted internal user]`                                         |
+| Submitted Passwords            | `[redacted]`                                                       |
+| Threat Category                | `Trojan`                                                           |
+| Archive File Count             | `49`                                                               |
+| Decoded Challenge Flag         | `[redacted TryHackMe flag]`                                        |
+
+---
+
+## MITRE ATT&CK Mapping
+
+| Tactic               | Technique                                | Description                                                         |
+| -------------------- | ---------------------------------------- | ------------------------------------------------------------------- |
+| Initial Access       | Phishing                                 | Adversary sent phishing emails to employees                         |
+| Credential Access    | Credential Harvesting                    | Fake Microsoft login page collected user credentials                |
+| Collection           | Data from Local System / Web Application | Captured credentials were stored in exposed logs                    |
+| Exfiltration         | Exfiltration Over Web Service            | Credentials were configured to be sent to an external email address |
+| Defense Evasion      | Masquerading                             | Login page impersonated Microsoft                                   |
+| Resource Development | Acquire Infrastructure                   | Attacker used a dedicated phishing domain and hosted phishing kit   |
+
+---
+
+## Example Detection Queries
+
+### Search for Emails from the Suspicious Sender
+
+```spl
+index=email sender="Accounts.Payable@groupmarketingonline.icu"
+```
+
+### Search for DNS Queries to the Phishing Domain
+
+```spl
+index=dns query="kennaroads.buzz"
+```
+
+### Search for Proxy Traffic to the Phishing Domain
+
+```spl
+index=proxy url_domain="kennaroads.buzz"
+```
+
+### Search for Downloads of the Phishing Kit Archive
+
+```spl
+index=proxy uri_path="*/Update365.zip"
+```
+
+### Search for Access to the Exposed Directory
+
+```spl
+index=proxy url="*kennaroads.buzz/data*"
+```
+
+### Search for Microsoft Login Impersonation Activity
+
+```spl
+index=proxy url="*kennaroads.buzz*" AND (uri_path="*/login*" OR uri_path="*/data*")
+```
+
+---
+
+## Recommended Response Actions
+
+If this activity was observed in a real SOC environment, recommended response actions would include:
+
+* Quarantine phishing emails from the suspicious sender
+* Block the sender address `Accounts.Payable@groupmarketingonline.icu`
+* Block the phishing domain `kennaroads.buzz`
+* Search email logs for additional recipients
+* Identify users who clicked the phishing link
+* Identify users who submitted credentials
+* Reset passwords for affected users
+* Revoke active sessions for compromised accounts
+* Review Microsoft 365 sign-in logs for suspicious activity
+* Enforce multi-factor authentication where possible
+* Add the sender, domain, hash, and collection email to threat intelligence records
+* Report the phishing domain to the hosting provider or registrar
+* Review proxy and DNS logs for related activity
+
+---
+
+## Screenshots
+
+Add screenshots to the `/images` folder and reference them below:
+
+```markdown
+![Fake Microsoft Login Page](images/fake-microsoft-login-page.png)
+
+![Exposed Data Directory](images/exposed-data-directory.png)
+
+![SHA256 Hash Calculation](images/sha256-hash-calculation.png)
+
+![VirusTotal Detection](images/virustotal-detection.png)
+
+![Captured Credential Log Redacted](images/captured-credential-log-redacted.png)
+```
+
+
+
+---
+
+## Skills Demonstrated
+
+* Phishing Email Analysis
+* URL and Redirection Analysis
+* Credential Harvesting Investigation
+* Phishing Kit Analysis
+* Open Directory Investigation
+* File Hashing
+* VirusTotal Analysis
+* CyberChef Decoding
+* IOC Extraction
+* MITRE ATT&CK Mapping
+* SOC Triage and Documentation
+* Responsible Reporting and Redaction
+
+---
+
+## Conclusion
+
+This investigation identified a phishing campaign targeting SwiftSpend Financial employees with a fake Microsoft login page.
+
+The adversary used the sender address `Accounts.Payable@groupmarketingonline.icu` and hosted phishing content on `kennaroads.buzz`. Further investigation revealed an exposed `/data` directory containing the phishing kit archive `Update365.zip`.
+
+The archive hash was investigated using VirusTotal and was associated with phishing and Trojan activity. The phishing kit also contained exposed credential logs and a `submit.php` file configured to send harvested credentials to `m3npat@yandex.com`.
+
+Victim emails, submitted passwords, and the TryHackMe flag were redacted from this report to follow responsible cybersecurity reporting practices.
+
+This project demonstrates a practical SOC analyst workflow for phishing investigation, including email analysis, phishing URL review, threat intelligence enrichment, credential exposure analysis, phishing kit review, and incident response documentation.
+
+---
