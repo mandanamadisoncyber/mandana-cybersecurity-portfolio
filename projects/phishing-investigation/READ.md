@@ -288,7 +288,7 @@ If this activity was observed in a real SOC environment, recommended response ac
 ## Screenshots
 
 
-```markdown
+
 ![Fake Microsoft Login Page](./fake-microsoft-login-page.png)
 
 ![Exposed Data Directory](./exposed-data-directory.png)
@@ -298,7 +298,7 @@ If this activity was observed in a real SOC environment, recommended response ac
 ![VirusTotal Detection](./virustotal-detection.png)
 
 ![Captured Credential Log Redacted](./captured-credential-log-redacted.png)
-```
+
 
 ---
 
