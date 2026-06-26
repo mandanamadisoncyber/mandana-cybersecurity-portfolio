@@ -289,15 +289,15 @@ If this activity was observed in a real SOC environment, recommended response ac
 
 
 ```markdown
-![Fake Microsoft Login Page](fake-microsoft-login-page.png)
+![Fake Microsoft Login Page](./fake-microsoft-login-page.png)
 
-![Exposed Data Directory](exposed-data-directory.png)
+![Exposed Data Directory](./exposed-data-directory.png)
 
-![SHA256 Hash Calculation](sha256-hash-calculation.png)
+![SHA256 Hash Calculation](./sha256-hash-calculation.png)
 
-![VirusTotal Detection](virustotal-detection.png)
+![VirusTotal Detection](./virustotal-detection.png)
 
-![Captured Credential Log Redacted](captured-credential-log-redacted.png)
+![Captured Credential Log Redacted](./captured-credential-log-redacted.png)
 ```
 
 ---
