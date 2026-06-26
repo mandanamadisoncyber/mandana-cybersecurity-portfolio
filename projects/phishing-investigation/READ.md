@@ -287,18 +287,17 @@ If this activity was observed in a real SOC environment, recommended response ac
 
 ## Screenshots
 
-Add screenshots to the `/images` folder and reference them below:
 
 ```markdown
-![Fake Microsoft Login Page](images/fake-microsoft-login-page.png)
+![Fake Microsoft Login Page](fake-microsoft-login-page.png)
 
-![Exposed Data Directory](images/exposed-data-directory.png)
+![Exposed Data Directory](exposed-data-directory.png)
 
-![SHA256 Hash Calculation](images/sha256-hash-calculation.png)
+![SHA256 Hash Calculation](sha256-hash-calculation.png)
 
-![VirusTotal Detection](images/virustotal-detection.png)
+![VirusTotal Detection](virustotal-detection.png)
 
-![Captured Credential Log Redacted](images/captured-credential-log-redacted.png)
+![Captured Credential Log Redacted](captured-credential-log-redacted.png)
 ```
 
 ---
