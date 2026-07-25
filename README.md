@@ -1,24 +1,40 @@
 # Mandana Madison – Cybersecurity Portfolio
 
-Cybersecurity Analyst with hands-on experience in network scanning, threat detection, phishing analysis, and cloud-based system deployment.
+CompTIA Security+ certified technology professional building hands-on cybersecurity projects across security analysis, identity & access management (IAM), application security and security engineering.
 
-Hands-on experience with TryHackMe labs
-Building real-world cybersecurity projects
+This portfolio showcases practical cybersecurity projects based on realistic enterprise scenarios, covering security investigations, Microsoft Entra ID, PowerShell automation, SIEM, SQL security and incident response.
+
 Open to remote opportunities
 
 ---
 
-## Skills
+## Technical Skills
+Microsoft Entra ID (Azure AD)
+Identity & Access Management (IAM)
+Role-Based Access Control (RBAC)
+Conditional Access
+Microsoft Graph
+PowerShell
+SQL & SQLite
+Splunk
+Linux
+Nmap
+Wireshark
+Burp Suite
+OpenVAS
+Bash
 
-* Network Scanning (Nmap)
-* Linux Fundamentals
-* Threat Detection Basics
-* Vulnerability Analysis
-* TryHackMe Labs
-* AWS (EC2)
-* Splunk
-* Bash scripting
-* log analysis
+## Security Skills
+Identity Lifecycle Management (Joiner / Mover / Leaver)
+Incident Response
+Security Investigations
+Authentication & Access Control
+Phishing Analysis
+Log Analysis
+Vulnerability Assessment
+Threat Detection
+Security Documentation
+User Acceptance Testing (UAT)
   
 
 ---
@@ -78,14 +94,6 @@ Automated deployment of a Node.js application on AWS EC2, including firewall con
 
  [View Project](./projects/linux-automation)
 
-
-
----
-
-## Labs
-
-* TryHackMe (Nmap, Networking, Linux)
-* More projects coming soon...
 
 ---
 
