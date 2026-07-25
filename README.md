@@ -36,7 +36,6 @@ Threat Detection
 Security Documentation
 User Acceptance Testing (UAT)
   
-
 ---
 
 ## Projects
