@@ -1,0 +1,37 @@
+                     Northwind Digital Ltd
+                 Enterprise Identity Platform
+                               │
+                               ▼
+                    Microsoft Entra ID Tenant
+                               │
+        ┌──────────────────────┼──────────────────────┐
+        │                      │                      │
+        ▼                      ▼                      ▼
+     Enterprise             Security              Administrative
+       Users                 Groups                  Units
+        │                      │                      │
+        └──────────────┬───────┘                      │
+                       ▼                              ▼
+                Role-Based Access             Authentication
+                 Control (RBAC)                Methods & MFA
+                       │                              │
+                       └──────────────┬───────────────┘
+                                      ▼
+                           Conditional Access
+                             (P2 Lab Tenant)
+                                      │
+                                      ▼
+                          Identity Monitoring
+                     ┌───────────────────────────┐
+                     │                           │
+                     ▼                           ▼
+               Sign-in Logs               Audit Logs
+                     │                           │
+                     └──────────────┬────────────┘
+                                    ▼
+                        PowerShell Automation
+                         (Microsoft Graph API)
+                                    │
+                                    ▼
+                         Identity Audit Report
+						 
