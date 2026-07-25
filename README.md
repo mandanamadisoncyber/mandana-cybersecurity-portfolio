@@ -27,11 +27,22 @@ Open to remote opportunities
 
 Below are selected hands-on projects demonstrating practical cybersecurity skills.
 
-### Nmap Vulnerability Scan Lab
+### Enterprise SaaS Client Onboarding Investigation
 
-Performed network scanning using Nmap to identify open ports, services, and potential risks.
+Simulated a real-world enterprise SaaS onboarding incident using SQLite and SQL to investigate user provisioning failures, authentication issues and data quality problems.
 
- [View Project](./projects/vulnerability-scan)
+The project includes a complete incident lifecycle covering investigation, remediation, validation, client communication and user acceptance testing.
+
+[View Project](./projects/enterprise-saas-client-onboarding-investigation)
+
+---
+### SIEM Lab – Splunk
+
+Used Splunk to analyze logs and detect suspicious activity, including brute-force login attempts.
+
+ [View Project](./projects/siem-lab)
+
+
 
 ---
 
@@ -43,12 +54,12 @@ Analyzed multiple phishing emails to identify social engineering techniques and 
 
 ---
 
-### SIEM Lab – Splunk
+### Nmap Vulnerability Scan Lab
 
-Used Splunk to analyze logs and detect suspicious activity, including brute-force login attempts.
+Performed network scanning using Nmap to identify open ports, services, and potential risks.
 
- [View Project](./projects/siem-lab)
-
+ [View Project](./projects/vulnerability-scan)
+ 
 ---
 
 ### Linux Automation & Secure Deployment (AWS EC2)
