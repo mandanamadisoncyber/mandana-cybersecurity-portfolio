@@ -27,6 +27,16 @@ Open to remote opportunities
 
 Below are selected hands-on projects demonstrating practical cybersecurity skills.
 
+### Enterprise IAM Implementation
+
+Designed and implemented a simulated enterprise Microsoft Entra ID environment for a fictional organisation, demonstrating identity lifecycle management, role-based access control, Conditional Access, authentication methods, security investigations and PowerShell automation.
+
+The project covers the complete identity lifecycle, including Joiner/Mover/Leaver processes, RBAC design, Administrative Units, Temporary Access Pass, sign-in analysis, audit log investigation and Microsoft Graph reporting.
+
+[View Project](./projects/enterprise-iam-implementation)
+
+---
+
 ### Enterprise SaaS Client Onboarding Investigation
 
 Simulated a real-world enterprise SaaS onboarding incident using SQLite and SQL to investigate user provisioning failures, authentication issues and data quality problems.
