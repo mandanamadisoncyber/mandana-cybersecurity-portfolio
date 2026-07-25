@@ -9,32 +9,34 @@ Open to remote opportunities
 ---
 
 ## Technical Skills
-Microsoft Entra ID (Azure AD)
-Identity & Access Management (IAM)
-Role-Based Access Control (RBAC)
-Conditional Access
-Microsoft Graph
-PowerShell
-SQL & SQLite
-Splunk
-Linux
-Nmap
-Wireshark
-Burp Suite
-OpenVAS
-Bash
+
+- Microsoft Entra ID (Azure AD)
+- Identity & Access Management (IAM)
+- Role-Based Access Control (RBAC)
+- Conditional Access
+- Microsoft Graph
+- PowerShell
+- SQL & SQLite
+- Splunk
+- Linux
+- Nmap
+- Wireshark
+- Burp Suite
+- OpenVAS
+- Bash
 
 ## Security Skills
-Identity Lifecycle Management (Joiner / Mover / Leaver)
-Incident Response
-Security Investigations
-Authentication & Access Control
-Phishing Analysis
-Log Analysis
-Vulnerability Assessment
-Threat Detection
-Security Documentation
-User Acceptance Testing (UAT)
+
+- Identity Lifecycle Management (Joiner / Mover / Leaver)
+- Incident Response
+- Security Investigations
+- Authentication & Access Control
+- Phishing Analysis
+- Log Analysis
+- Vulnerability Assessment
+- Threat Detection
+- Security Documentation
+- User Acceptance Testing (UAT)
   
 ---
 
