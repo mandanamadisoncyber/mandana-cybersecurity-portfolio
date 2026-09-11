@@ -44,7 +44,7 @@ Open to remote opportunities
 
 Below are selected hands-on projects demonstrating practical cybersecurity skills.
 
-SAST Pipeline Lab: Automated SQL Injection Detection
+### SAST Pipeline Lab: Automated SQL Injection Detection
 Built a GitLab CI/CD security pipeline using Semgrep to scan a deliberately vulnerable Python application and prevent insecure code from passing an automated security check.
 The project demonstrates the complete SAST workflow: detecting and reviewing SQL injection findings, remediating the vulnerability with a parameterized query, and confirming the fix through a successful pipeline.
 
