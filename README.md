@@ -10,33 +10,40 @@ Open to remote Application Security, Product Security and Security Engineering o
 
 ## Technical Skills
 
-- Microsoft Entra ID (Azure AD)
-- Identity & Access Management (IAM)
-- Role-Based Access Control (RBAC)
-- Conditional Access
-- Microsoft Graph
-- PowerShell
-- SQL & SQLite
-- Splunk
-- Linux
-- Nmap
-- Wireshark
-- Burp Suite
-- OpenVAS
-- Bash
+* Semgrep
+* GitLab CI/CD
+* Git and GitHub
+* Burp Suite
+* OWASP ZAP
+* Python
+* SQL and SQLite
+* Linux and Bash
+* YAML
+* Microsoft Entra ID (Azure AD)
+* PowerShell
+* Microsoft Graph
+* Splunk
+* Nmap
+* Wireshark
+* OpenVAS
 
 ## Security Skills
 
-- Identity Lifecycle Management (Joiner / Mover / Leaver)
-- Incident Response
-- Security Investigations
-- Authentication & Access Control
-- Phishing Analysis
-- Log Analysis
-- Vulnerability Assessment
-- Threat Detection
-- Security Documentation
-- User Acceptance Testing (UAT)
+* Static Application Security Testing (SAST)
+* Dynamic Application Security Testing (DAST)
+* Web Application Security
+* Vulnerability Analysis and Remediation
+* Secure Code Review
+* CI/CD Security Gates
+* OWASP Top 10
+* Authentication and Access Control
+* Identity and Access Management (IAM)
+* Role-Based Access Control (RBAC)
+* Identity Lifecycle Management
+* Security Investigations
+* Log and Phishing Analysis
+* Security Documentation
+
   
 ---
 
