@@ -1,10 +1,10 @@
 # Mandana Madison – Cybersecurity Portfolio
 
-CompTIA Security+ certified technology professional building hands-on cybersecurity projects across security analysis, identity & access management (IAM), application security and security engineering.
+CompTIA Security+ certified technology professional focused on application security and secure software delivery, with hands-on experience in vulnerability analysis, secure code remediation and automated security testing.
 
-This portfolio showcases practical cybersecurity projects based on realistic enterprise scenarios, covering security investigations, Microsoft Entra ID, PowerShell automation, SIEM, SQL security and incident response.
+This portfolio showcases practical projects involving SAST, CI/CD security gates, SQL injection remediation, OWASP vulnerability validation, identity and access management, security investigations and automation.
 
-Open to remote opportunities
+Open to remote Application Security, Product Security and Security Engineering opportunities.
 
 ---
 
