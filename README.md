@@ -51,11 +51,22 @@ Open to remote Application Security, Product Security and Security Engineering o
 
 Below are selected hands-on projects demonstrating practical cybersecurity skills.
 
+### Access-Control Testing
+
+PortSwigger case studies covering method-based and workflow access-control bypasses, remediation and retesting.
+
+[View Project](./projects/access-control-testing/)
+
+---
+
 ### SAST Pipeline Lab: Automated SQL Injection Detection
+
 Built a GitLab CI/CD security pipeline using Semgrep to scan a deliberately vulnerable Python application and prevent insecure code from passing an automated security check.
 The project demonstrates the complete SAST workflow: detecting and reviewing SQL injection findings, remediating the vulnerability with a parameterized query, and confirming the fix through a successful pipeline.
 
 [View Project](./projects/sast-pipeline-lab)
+
+---
 
 ### Enterprise IAM Implementation
 
