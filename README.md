@@ -1,48 +1,61 @@
 # Mandana Madison – Cybersecurity Portfolio
 
-CompTIA Security+ certified technology professional building hands-on cybersecurity projects across security analysis, identity & access management (IAM), application security and security engineering.
+CompTIA Security+ certified technology professional focused on application security and secure software delivery, with hands-on experience in vulnerability analysis, secure code remediation and automated security testing.
 
-This portfolio showcases practical cybersecurity projects based on realistic enterprise scenarios, covering security investigations, Microsoft Entra ID, PowerShell automation, SIEM, SQL security and incident response.
+This portfolio showcases practical projects involving SAST, CI/CD security gates, SQL injection remediation, OWASP vulnerability validation, identity and access management, security investigations and automation.
 
-Open to remote opportunities
+Open to remote Application Security, Product Security and Security Engineering opportunities.
 
 ---
 
 ## Technical Skills
 
-- Microsoft Entra ID (Azure AD)
-- Identity & Access Management (IAM)
-- Role-Based Access Control (RBAC)
-- Conditional Access
-- Microsoft Graph
-- PowerShell
-- SQL & SQLite
-- Splunk
-- Linux
-- Nmap
-- Wireshark
-- Burp Suite
-- OpenVAS
-- Bash
+* Semgrep
+* GitLab CI/CD
+* Git and GitHub
+* Burp Suite
+* OWASP ZAP
+* Python
+* SQL and SQLite
+* Linux and Bash
+* YAML
+* Microsoft Entra ID (Azure AD)
+* PowerShell
+* Microsoft Graph
+* Splunk
+* Nmap
+* Wireshark
+* OpenVAS
 
 ## Security Skills
 
-- Identity Lifecycle Management (Joiner / Mover / Leaver)
-- Incident Response
-- Security Investigations
-- Authentication & Access Control
-- Phishing Analysis
-- Log Analysis
-- Vulnerability Assessment
-- Threat Detection
-- Security Documentation
-- User Acceptance Testing (UAT)
+* Static Application Security Testing (SAST)
+* Dynamic Application Security Testing (DAST)
+* Web Application Security
+* Vulnerability Analysis and Remediation
+* Secure Code Review
+* CI/CD Security Gates
+* OWASP Top 10
+* Authentication and Access Control
+* Identity and Access Management (IAM)
+* Role-Based Access Control (RBAC)
+* Identity Lifecycle Management
+* Security Investigations
+* Log and Phishing Analysis
+* Security Documentation
+
   
 ---
 
 ## Projects
 
 Below are selected hands-on projects demonstrating practical cybersecurity skills.
+
+### SAST Pipeline Lab: Automated SQL Injection Detection
+Built a GitLab CI/CD security pipeline using Semgrep to scan a deliberately vulnerable Python application and prevent insecure code from passing an automated security check.
+The project demonstrates the complete SAST workflow: detecting and reviewing SQL injection findings, remediating the vulnerability with a parameterized query, and confirming the fix through a successful pipeline.
+
+[View Project](./projects/sast-pipeline-lab)
 
 ### Enterprise IAM Implementation
 
